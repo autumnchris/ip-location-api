@@ -1,0 +1,20 @@
+{
+  "name": "ip-location-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autumnchris/ip-location-api.git"
+  },
+  "author": "autumnchris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/autumnchris/ip-location-api/issues"
+  },
+  "homepage": "https://github.com/autumnchris/ip-location-api#readme"
+}
