@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/autumnchris/ip-location-api/issues"
   },
-  "homepage": "https://github.com/autumnchris/ip-location-api#readme",
+  "homepage": "https://autumnchris-ip-location.herokuapp.com",
   "dependencies": {
     "express": "^4.16.4",
     "iplocation": "^6.1.0"
