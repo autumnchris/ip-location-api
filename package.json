@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/autumnchris/ip-location-api#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "iplocation": "^6.1.0"
   }
 }
