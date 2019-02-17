@@ -3,6 +3,11 @@ html {
   background: linear-gradient(120deg, #1d1d1d, #31283a) fixed;
 }
 
+p {
+  line-height: 24px;
+  margin: 15px 0 10px;
+}
+
 header {
   margin: auto;
   max-width: 600px;
