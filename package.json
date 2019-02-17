@@ -1,7 +1,7 @@
 {
   "name": "ip-location-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "An API that gets the longitude and latitude for the user's IP address and any other entered IP address.",
   "main": "app.js",
   "scripts": {
     "start": "node app",
