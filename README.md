@@ -4,6 +4,13 @@ An API that gets the longitude and latitude for the user's IP address and any ot
 
 ---
 
+## Built With
+* [Express.js](https://expressjs.com)
+* CSS3
+* HTML5
+* [iplocation](https://github.com/roryrjb/iplocation)
+* [Google Fonts](https://fonts.google.com)
+
 ## Demo
 
 View project demo at [https://autumnchris-ip-location.herokuapp.com](https://autumnchris-ip-location.herokuapp.com).
