@@ -1,4 +1,5 @@
 const express = require('express');
+const iplocation = require('iplocation').default;
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -8,6 +9,28 @@ app.get('/', (req, res) => {
 });
 
 app.use(express.static(`${__dirname}/public`));
+
+app.get('/api/ip/:ip', (req, res) => {
+  let ip;
+
+  if (req.params.ip === 'me') {
+    ip = req.ip;
+  }
+  else {
+    ip = req.params.ip;
+  }
+  iplocation(ip).then(result => {
+    res.json({
+      ip,
+      lat: result.latitude,
+      lon: result.longitude
+    });
+  }).catch(error => {
+    res.json({
+      error: "Could not get coordinates from IP address."
+    });
+  });
+});
 
 app.use((req, res) => {
   res.sendFile(`${__dirname}/views/404.html`, 404);
