@@ -14,7 +14,7 @@ app.get('/api/ip/:ip', (req, res) => {
   let ip;
 
   if (req.params.ip === 'me') {
-    ip = req.ip;
+    ip = req.headers['x-forwarded-for'].split(',')[0];
   }
   else {
     ip = req.params.ip;
