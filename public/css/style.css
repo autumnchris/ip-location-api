@@ -8,6 +8,14 @@ p {
   margin: 15px 0 10px;
 }
 
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: hsl(270, 100%, 85%);
+}
+
 header {
   margin: auto;
   max-width: 600px;
