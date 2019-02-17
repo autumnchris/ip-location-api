@@ -16,6 +16,10 @@ a:focus {
   color: hsl(270, 100%, 85%);
 }
 
+hr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
 header {
   margin: auto;
   max-width: 600px;
