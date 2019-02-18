@@ -27,7 +27,7 @@ app.get('/api/ip/:ip', (req, res) => {
     });
   }).catch(error => {
     res.json({
-      error: "Could not get coordinates from IP address."
+      error: 'Could not get coordinates from IP address.'
     });
   });
 });
