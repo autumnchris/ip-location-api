@@ -62,3 +62,14 @@ pre {
   padding: 2px;
   white-space: pre;
 }
+
+pre {
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+pre code {
+  display: block;
+  line-height: 18px;
+  padding: 6px;
+}
