@@ -1,4 +1,5 @@
 const express = require('express');
+const iplocation = require('iplocation').default;
 const router = express.Router();
 
 router.get('/:ip', (req, res, next) => {

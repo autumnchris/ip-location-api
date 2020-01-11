@@ -1,5 +1,4 @@
 const express = require('express');
-const iplocation = require('iplocation').default;
 const indexRouter = require('./routes/index');
 const apiRouter = require('./routes/api');
 
