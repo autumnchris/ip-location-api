@@ -6,8 +6,8 @@ An API that gets the longitude and latitude for the user's IP address and any ot
 
 ## Built With
 * [Express.js](https://expressjs.com)
+* [EJS](https://ejs.co)
 * CSS3
-* HTML5
 * [iplocation](https://github.com/roryrjb/iplocation)
 * [Google Fonts](https://fonts.google.com)
 

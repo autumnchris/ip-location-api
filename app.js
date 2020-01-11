@@ -1,35 +1,23 @@
 const express = require('express');
 const iplocation = require('iplocation').default;
+const indexRouter = require('./routes/index');
+const apiRouter = require('./routes/api');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.set('views', `${__dirname}/views`);
+app.set('view engine', 'ejs');
+
 app.use(express.static(`${__dirname}/public`));
 
-app.get('/api/ip/:ip', (req, res) => {
-  let ip;
+app.use('/', indexRouter);
+app.use('/api/ip', apiRouter);
 
-  if (req.params.ip === 'me') {
-    ip = req.headers['x-forwarded-for'].split(',')[0];
-  }
-  else {
-    ip = req.params.ip;
-  }
-  iplocation(ip).then(result => {
-    res.json({
-      ip,
-      lat: result.latitude,
-      lon: result.longitude
-    });
-  }).catch(error => {
-    res.json({
-      error: 'Could not get coordinates from IP address.'
-    });
-  });
-});
-
-app.use((req, res) => {
-  res.status(404).sendFile(`${__dirname}/public/404.html`);
+app.use((req, res, next) => {
+    res.status(404).render('404.ejs', {title: 'Page not found |'});
 });
 
 app.listen(port, console.log(`Server is listening at port ${port}.`));
+
+module.exports = app;
