@@ -9,6 +9,7 @@ An API that gets the longitude and latitude for the user's IP address and any ot
 * [EJS](https://ejs.co)
 * CSS3
 * [iplocation](https://github.com/roryrjb/iplocation)
+* [Normalize.css](https://necolas.github.io/normalize.css)
 * [Google Fonts](https://fonts.google.com)
 
 ## Demo
