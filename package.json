@@ -20,7 +20,8 @@
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.16.4",
-    "iplocation": "^6.1.0"
+    "express-ejs-layouts": "^2.5.1",
+    "iplocation": "^7.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
