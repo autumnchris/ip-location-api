@@ -1,13 +1,13 @@
-const iplocation = require('iplocation').default;
+const geoip = require('geoip-lite');
 
 exports.getLocation = (req, res, next) => {
-  const errorMessage = 'Unable to get coordinates from IP address.';
   let ip;
+  let geo;
 
   if (req.params.ip === 'me') {
 
     if (!req.headers['x-forwarded-for']) {
-      res.send(errorMessage);
+      res.send('Unable to get coordinates from IP address.');
     }
     else {
       ip = req.headers['x-forwarded-for'].split(',')[0];
@@ -17,13 +17,10 @@ exports.getLocation = (req, res, next) => {
     ip = req.params.ip;
   }
 
-  iplocation(ip).then(result => {
-    res.json({
-      ip,
-      lat: result.latitude,
-      lon: result.longitude
-    });
-  }).catch(error => {
-    res.send(errorMessage);
-  });
+  geo = geoip.lookup(ip);
+	res.json({
+		ip,
+		lat: geo.ll[0],
+		lon: geo.ll[1]
+	});
 }
