@@ -15,7 +15,7 @@ An Express.js API that gets the longitude and latitude for the user's IP address
 
 ## Demo
 
-View project demo at [https://autumnchris-ip-location.herokuapp.com](https://autumnchris-ip-location.herokuapp.com).
+View project demo at [https://autumnchris-ip-location.herokuapp.com/api](https://autumnchris-ip-location.herokuapp.com/api).
 
 ## Instructions
 
