@@ -6,9 +6,12 @@ An Express.js API that gets the longitude and latitude for the user's IP address
 
 ## Built With
 * [Express.js](https://expressjs.com)
+* [Node.js](https://nodejs.org/en)
 * [EJS](https://ejs.co)
+* HTML5
 * CSS3
 * JavaScript
+* Vanilla JS
 * [GeoIP-lite](https://github.com/geoip-lite/node-geoip)
 * [Normalize.css](https://necolas.github.io/normalize.css)
 * [Google Fonts](https://fonts.google.com)
